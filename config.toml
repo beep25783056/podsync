@@ -52,7 +52,7 @@ key_file_path = "/var/www/priv.pem"
 # Environment variables support multiple keys separated by spaces for API key rotation:
 #   export PODSYNC_YOUTUBE_API_KEY="key1 key2 key3"
 [tokens]
-youtube = "YOUTUBE_API_TOKEN" # YouTube API Key. See https://developers.google.com/youtube/registering_an_application
+youtube = "AIzaSyAXh_TP1bnWydLq2c5rU-eW4yq5rs0etB8" # YouTube API Key. See https://developers.google.com/youtube/registering_an_application
 vimeo = [ # Multiple keys will be rotated.
   "VIMEO_API_KEY_1", # Vimeo developer keys. See https://developer.vimeo.com/api/guides/start#generate-access-token
   "VIMEO_API_KEY_2"
@@ -64,7 +64,7 @@ vimeo = [ # Multiple keys will be rotated.
   # Each channel must have a unique identifier (in this example "ID1").
   [feeds.ID1]
   # URL address of a channel, group, user, or playlist.
-  url = "https://www.youtube.com/channel/CHANNEL_NAME_TO_HOST"
+  url = "https://www.youtube.com/playlist?list=PLa-c2nuT5zyMd30CPLEVQC2c_3qQBoydS"
 
   # The number of episodes to query each update (keep in mind, that this might drain API token)
   page_size = 50
@@ -73,7 +73,7 @@ vimeo = [ # Multiple keys will be rotated.
   update_period = "12h"
 
   quality = "high" # "high" or "low"
-  format = "video" # "audio", "video" or "custom"
+  format = "audio" # "audio", "video" or "custom"
   # When format = "custom"
   # YouTubeDL format parameter and result file extension
   custom_format = { youtube_dl_format = "bestaudio[ext=m4a]", extension = "m4a" }
